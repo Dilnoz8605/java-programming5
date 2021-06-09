@@ -6,9 +6,7 @@ public class Customer {
 
     //No-Args Constructor.
     public Customer() {
-        System.out.println("No-args constructor");
-        name = "new customer";
-        id = -1;
+
     }
 
     //add a Constructor with params where we can assign name and id
@@ -16,6 +14,7 @@ public class Customer {
         System.out.println("2-args constructor");
         this.name = name; //setName(name);
         this.id = id;     //setId(id); when we have some conditions in setter. reuse that condition here
+
     }
 
     @Override
