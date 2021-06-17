@@ -11,5 +11,6 @@ instagram.useTheApp(20);
 Discord b22Discord=new Discord();
 b22Discord.name="Discord";
 b22Discord.useTheApp(100);
+instagram.download();
     }
 }
