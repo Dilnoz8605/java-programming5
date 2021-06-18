@@ -7,7 +7,7 @@ public class ElectricCar {
     private double price;
     private int range;
     private static int count;
-
+    public static final int MAX_RANGE=400;
     public ElectricCar(String make, String model, int year, double price, int range) {
        setMake(make);
        setModel(model);
@@ -27,7 +27,10 @@ public class ElectricCar {
                 ", range=" + range +
                 '}';
     }
-
+        public final void charge(){
+            System.out.println("Charging the electric car using plug-in");
+            range=MAX_RANGE;
+        }
     protected void driver(int miles){
         if(range==0 || range-miles<0){
             System.out.println("ERROR: cannot driver that far, you don't have enough range");
