@@ -15,5 +15,14 @@ public class CarObjects {
         }else{
             System.out.println("Just purchased "+electricCar1.getMake()+" || "+electricCar1.getModel());
         }
+        ElectricCar electricCar2=new ElectricCar("Tesla","CyberTruck",2022,59990,300);
+        System.out.println(electricCar2);
+        System.out.println("Count = "+ElectricCar.getCount());
+        Roadster roadster1=new Roadster("Roadster",2022,200000,620);
+        System.out.println(roadster1);
+        roadster1.driver(1000);
+        roadster1.driver(600);
+        System.out.println("Count = "+ElectricCar.getCount());
+
     }
 }
