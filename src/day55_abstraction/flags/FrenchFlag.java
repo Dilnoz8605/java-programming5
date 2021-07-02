@@ -2,7 +2,7 @@ package day55_abstraction.flags;
 
 import java.awt.*;
 
-public class FrenchFlag extends Flag {
+public class FrenchFlag extends Flag{
     @Override
     public void draw() {
         Grid grid = new Grid(100);
